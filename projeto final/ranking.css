@@ -13,16 +13,17 @@ header {
     width: 100%;
     height: 1277px;
     margin-bottom: 0;
-	padding: 0;
+	padding: 30px;
  }
  body{
     margin: 0;
 	padding: 0;
  }
  footer{
-    background-color: #FCE46D;
+    background-color: #EDCF6B;
     margin: 0;
 	padding: 0;
+    text-align: end;
  }
  .titulo {
     color: white;
@@ -41,6 +42,7 @@ a {
     text-align: center;
     transform: translateX(0px);
     animation: float 4s ease-out infinite ;
+    padding-top: 150px;
 }
 @keyframes float {
     0%{
@@ -56,11 +58,29 @@ a {
 .top5{
     background-color: black;
     background-size: 100%;
-    text-align:calc(350px);
-    color:white;
-    position: relative;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
-#dadosdev {
-    text-align: right;
+.dadosdev {
     display: inline-flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: left;
+}
+.devs {
+    padding: 10px;
+}
+.info2{
+    color: black;
+  	background-color: #EDCF6B;
+    width: auto;
+    height: auto;
+  	font-size: 20px;
+    border-radius: 10px;
+}
+.titulo_top5 {
+    color: white;
+    text-align: center;
 }
