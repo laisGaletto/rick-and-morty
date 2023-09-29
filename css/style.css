@@ -1,3 +1,49 @@
+header{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
+    background-color: #3ebd4b;
+    color: #fff;
+    padding: 20px;
+    align-items: end;
+}
+
 .logo{
-    height: 90px;
+    height: 70px;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.banner{
+    background-image: url('../imgs/banner.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+}
+
+.logo-banner{
+    height: 150px;
+}
+
+.banner-characters img{
+    height: 100px;
+}
+
+.logo2{
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; }
+    .menu {
+        order: 1; 
+    }
 }
