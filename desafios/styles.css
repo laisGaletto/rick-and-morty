@@ -1,0 +1,60 @@
+/* Estilo do corpo da página */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Estilo do parágrafo */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilo da seção principal */
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do botão quando hover */
+button:hover {
+  background-color: #0056b3;
+}

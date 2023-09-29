@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Layout de Página</title>
+</head>
+<body>
+    <header class="menu">
+        <nav class="menu__list">
+            <a href="#" class="menu__item">Início</a>
+            <div class="menu__item menu__item--has-submenu">
+                <a href="#" class="menu__link">Produtos</a>
+                <div class="submenu">
+                    <a href="#" class="submenu__item">Produto 1</a>
+                    <a href="#" class="submenu__item">Produto 2</a>
+                    <a href="#" class="submenu__item">Produto 3</a>
+                </div>
+            </div>
+            <a href="#" class="menu__item">Carrinho</a>
+            <a href="#" class="menu__item">Contato</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu Lateral</h2>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Conteúdo Principal</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </main>
+    </div>
+
+
+
+    <div class="display-examples">
+        <div class="block-example">
+            <h2>Display: block;</h2>
+            <p>Este é um elemento de bloco. Ele ocupa toda a largura disponível e inicia em uma nova linha.</p>
+        </div>
+
+        <span class="inline-example">
+            <h2>Display: inline;</h2>
+            <p>Este é um elemento inline. Ele fica ao lado de outros elementos inline e não inicia uma nova linha.</p>
+        </span>
+
+        <span class="inline-block-example">
+            <h2>Display: inline-block;</h2>
+            <p>Este é um elemento inline-block. Ele fica ao lado de outros elementos inline-block e permite definir largura e altura.</p>
+        </span>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Meu Site</p>
+    </footer>
+    
+</body>
+</html>
