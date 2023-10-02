@@ -5,7 +5,16 @@ header {
     width:100%;
     height:603px;
 	padding: 0;
- }
+    box-shadow: inset 0 0 50px black
+}
+.logo {
+    text-align: center;
+    padding-top: 200px;
+}
+.logo_footer {
+    text-align: left;
+    padding-top: 50px;
+}
 .fundo2 {
     background-size: 100%;
     background-image: url(./imagens/imagemmain.png);
@@ -33,6 +42,7 @@ header {
 .menu {
     color:white;
     text-align: right;
+    padding: 20px;
     font-family: 'Turret Road', cursive;
 }
 a {
@@ -55,6 +65,13 @@ a {
         transform: translateY(0px);
     }
 }
+.podio{
+    text-align: center;
+}
+.podio2{
+    text-align: center;
+    padding-bottom: 20px;
+}
 .top5{
     background-color: black;
     background-size: 100%;
@@ -71,6 +88,7 @@ a {
 }
 .devs {
     padding: 10px;
+    display: block;
 }
 .info2{
     color: black;
