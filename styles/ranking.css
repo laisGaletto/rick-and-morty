@@ -1,5 +1,5 @@
 header {
-    background-image: url(./imagens/imagemheader.png);
+    background-image: url('../imgs/banner.jpeg');
     background-size:100%;
     margin-bottom: 0;
     width:100%;
@@ -17,7 +17,7 @@ header {
 }
 .fundo2 {
     background-size: 100%;
-    background-image: url(./imagens/imagemmain.png);
+    background-image: url('../imgs/imagemmain.png');
     background-size: cover;
     width: 100%;
     height: 1277px;
@@ -31,6 +31,7 @@ header {
  footer{
     background-color: #EDCF6B;
     margin: 0;
+    display: block;
 	padding: 0;
     text-align: end;
  }
@@ -87,7 +88,8 @@ a {
     text-align: left;
 }
 .devs {
-    padding: 10px;
+    text-align: left;
+    padding: 20px;
     display: block;
 }
 .info2{
