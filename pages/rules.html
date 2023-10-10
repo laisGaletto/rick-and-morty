@@ -1,194 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <link rel="icon" href="../assets/imgs/favicon.ico">
-    <title>Space Match | Rules</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./imgs/favicon.ico">
+    <meta name="description"
+        content="Navegue pelas regras que guiam nosso game Space Match, inspirado nas aventuras intergalácticas de Rick & Morty">
+    <title>Space Match</title>
+
+    <style>
+        /*Import Fontes*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+
+
+        /*Root*/
+
+        :root {
+            --font-title: 'Turret Road', cursive;
+            --font-principal: 'Montserrat', sans-serif;
+            --color-base-title: #FCE46D;
+            --color-base-text: #FFFFFF;
+        }
+
+        /*Estilos Gerais da Página */
+
+        main {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(/imgs/background-space-ia.jpg), lightgray 50% / cover repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            position: fixed;
+        }
+
+
+        /* Menu */
+
+
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 15px;
+
+        }
+
+        .menu ul li {
+            float: left;
+            margin-left: 10px;
+            padding: 25px;
+            list-style: none;
+
+        }
+
+
+        .menu a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: var(--font-title);
+        }
+
+        .menu a:hover {
+            text-decoration: none;
+            color: #08C952;
+        }
+
+        .menu .link-rules {
+            color: #08C952;
+        }
+
+
+        /*Banner Main*/
+
+        .banner-main img {
+            width: 100%;
+        }
+
+
+
+        /*Rules CSS*/
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: var(--font-title);
+            color: var(--color-base-title);
+            font-size: 3em;
+            padding: 30px 0;
+        }
+
+        .rules,
+        .steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .rules-intro {
+            padding: 25px;
+            font-size: 1.5em;
+            color: var(--color-base-text);
+        }
+
+        .rules-intro p {
+            margin-top: 20px;
+            font-family: var(--font-principal);
+        }
+
+        .rules-img img {
+            border-radius: 50%;
+            width: 450px;
+            height: 450px;
+            padding: 25px;
+        }
+
+        /*Steps CSS*/
+
+        .container h1:nth-child(3) {
+            text-align: left;
+        }
+
+        .steps-number {
+            width: 20%
+        }
+
+        .steps-content {
+            width: 80;
+        }
+
+        .steps-content p {
+            font-size: 1.75em;
+            padding: 25px;
+            margin-left: 25px;
+            color: var(--color-base-text);
+            font-family: var(--font-principal);
+        }
+
+        /*Footer*/
+
+        footer {
+            background: linear-gradient(180deg, #FCE46D 0%, #EDCF6B 100%);
+            min-height: 350px;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        .container-footer {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            padding: 25px;
+        }
+
+        .footer-content-right {
+            width: 85%;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .footer-content-left {
+            width: 10%;
+            padding: 20px;
+        }
+
+        .devs {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        .dev {
+
+            min-height: 150px;
+            padding: 15px;
+            margin-left: 10px;
+            text-align: left;
+
+
+        }
+
+        .footer-content-right h2 {
+            font-size: 2.75em;
+            font-family: Turret Road;
+            padding: 25px;
+        }
+
+        .dev .city {
+            list-style-image: url(/imgs/location.png);
+            list-style-position: inside;
+        }
+
+        .dev .phone {
+            list-style-image: url(/imgs/whatsapp.png);
+            list-style-position: inside;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <img class="logo" src="../assets/imgs/logo.png" alt="rick and morty">
         <nav class="menu">
+            <img class="logo" src="./imgs/logo.png" alt="rick and morty">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/characters.html">Characters</a></li>
-                <li><a href="../pages/episodes.html">Episodes</a></li>
-                <li><a href="../pages/space-match.html">Game</a></li>
-                <li><a href="../pages/rules.html">Rules</a></li>
-                <li><a href="../pages/ranking.html">Ranking</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">SpaceMatch</a></li>
+                <li><a href="#" class="link-rules">Rules</a></li>
+                <li><a href="./episodes.html">Episodes</a></li>
+                <li><a href="./caracters.html">Caracters</a></li>
+                <li><a href="./ranking.html">Ranking</a></li>
             </ul>
         </nav>
     </header>
-    
 
+    <main>
+        <div class="banner-main">
+            <img src="imgs/banner-rick-and-morty-2.png" alt="Banner Principal da Páginas de Regra">
+        </div>
+        <div class="container">
+            <h1>Rules</h1>
+            <div class="rules">
+                <div class="rules-intro">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                </div>
+                <div class="rules-img">
+                    <img src="/imgs/ricky-morty-img-ia.jpg" alt="Ricky Jogando Video Game">
+                </div>
+            </div>
+            <h1>Steps</h1>
+            <div class="steps">
+                <div class="steps-number">
+                    <img src="imgs/step-number-one.png" alt="Space Match - Step One">
+                </div>
+                <div class="steps-content">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                </div>
+            </div>
+            <div class="steps">
+                <div class="steps-number">
+                    <img src="imgs/step-number-two.png" alt="Space Match - Step One">
+                </div>
+                <div class="steps-content">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                </div>
+            </div>
+            <div class="steps">
+                <div class="steps-number">
+                    <img src="imgs/step-number-tree.png" alt="Space Match - Step Two">
+                </div>
+                <div class="steps-content">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Dolorem quas quidem eligendi aspernatur sapiente quasi iure
+                        quis! Magni autem ut omnis dicta id maiores? Distinctio molestias ut atque. Porro, quas?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Inclusão do Footer -->
     <footer>
-        <div class="logo-infos">
-            <img class="logo2" src="../assets/imgs/logo2.png" alt="Pickle Rick">
-            <ul class="infos-footer">
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Code of Conduct</a></li>
-            </ul>
-            <ul class="redes-footer">
-                <li>
-                    <a href="https://github.com/laisGaletto" class="imagens">
-                        <img src="icone/iconegithub.png" alt="github"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/htmlLalis"class="imagens">
-                        <img src="icone/iconex.png" alt="twitter"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                        <img src="icone/iconeinstagram.png" alt="instagram"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                        <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
-        <div id="contact">
-            <div class="dados-dev">
-                <h5>LAIS GALETTO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Santos, SP</p></li>
-                    <li><p>+55 (13) 9 9643-3034</p></li>
-                </ul>
-                
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/laisGaletto" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/htmlLalis"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container-footer">
+            <div class="footer-content-left">
+                <img src="/imgs/image.png" alt="I'm Pickle Rick">
             </div>
+            <div class="footer-content-right">
+                <h2>WEBSITE DEVELOPERS</h2>
+                <div class="devs">
+                    <div class="dev">
+                        <h3>Lais Galetto</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Santos, SP</li>
+                            <li class="phone">+55 (13) 9 9643-3034</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Lucas Vida</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Belo Horizonte, MG</li>
+                            <li class="phone">+55 (31) 9 9290-8100</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Tiago Agnelo</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Salbador, BA</li>
+                            <li class="phone">+55 (71) 9 8849-8952</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Ramon Miranda</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Rio de Janeiro, RJ</li>
+                            <li class="phone">+55 (21) 9 8283-8989</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="dados-dev">
-                <h5>LUCAS VIDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Belo horizonte, MG</p></li>
-                    <li><p>+55 (31) 9 9290-8100</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="dados-dev">
-                <h5>TIAGO AGNELO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Salvador, BA</p></li>
-                    <li><p>+55 (71) 9 8849-8952</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="dados-dev">
-                <h5>RAMON MIRANDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Rio De Janeiro, RJ</p></li>
-                    <li><p>+55 (21) 9 8283-8989</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/ramon-miranda" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Ramon_mirandas"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ramon_miranda/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ramonmiranda98/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>Rick and Morty @ 2023</p>
-            <p>Website created by Lais Galetto, Lucas Vida, Tiago Agnelo e Ramon Mirando</p>
-        </div>
     </footer>
+    <script>
+
+        /* Verifica se houve scroll na página e coloca fundo menu preto */
+        let menu = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 550) {
+                menu.style.cssText = "background-color: rgba(0, 0, 0, 1); transition: 0.5s;"
+            } else {
+                menu.style.cssText = "background-color: rgba(0, 0, 0, 0.5); transition:0.5s;"
+            }
+        })
+    </script>
 </body>
+
+</html>
 </html>
