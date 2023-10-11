@@ -1,32 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./imgs/favicon.ico">
-    <title>Space Match</title>
+    <meta name="description" content="Conheça os persoagens do jogo e seu status atual">
+    <title>Space Match | Caracters</title>
+
+    <style>
+        /*Import Fontes*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+
+
+        /*Root*/
+
+        :root {
+            --font-title: 'Turret Road', cursive;
+            --font-principal: 'Montserrat', sans-serif;
+            --color-base-title: #FCE46D;
+            --color-base-text: #FFFFFF;
+        }
+
+        /*Estilos Gerais da Página */
+
+        main {
+            background: #000;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            position: fixed;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #FFF;
+            text-align: center;
+        }
+
+
+        /* Menu */
+
+
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 15px;
+
+        }
+
+        .menu ul li {
+            float: left;
+            margin-left: 10px;
+            padding: 25px;
+            list-style: none;
+
+        }
+
+
+        .menu a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: var(--font-title);
+        }
+
+        .menu a:hover {
+            text-decoration: none;
+            color: #08C952;
+        }
+
+        .menu .link-caracters {
+            color: #08C952;
+        }
+
+
+        /*Banner Main*/
+
+        .banner-main img {
+            width: 100%;
+        }
+
+        /*Caracters*/
+
+        .lista-personagens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            gap: 15px;
+        }
+
+        .card-caracters {
+            width: 20%;
+            background-color: #9f1239;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border-radius: 15px;
+            color: #FFF;
+
+        }
+
+        .card-caracters img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .card-caracters p {
+            font-size: 0.75em;
+            padding: 3px;
+        }
+
+        /*Paginação*/
+
+        .paginacao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paginacao button {
+            width: 25%;
+            background-color: #EDCF6B;
+            padding: 20px;
+            margin: 15px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .pagina-atual {
+            background-color: #08C952;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 2em;
+
+        }
+
+
+        /*Footer*/
+
+        footer {
+            background: linear-gradient(180deg, #FCE46D 0%, #EDCF6B 100%);
+            min-height: 350px;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        .container-footer {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            padding: 25px;
+        }
+
+        .footer-content-right {
+            width: 85%;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .footer-content-left {
+            width: 10%;
+            padding: 20px;
+        }
+
+        .devs {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        .dev {
+
+            min-height: 150px;
+            padding: 15px;
+            margin-left: 10px;
+            text-align: left;
+
+
+        }
+
+        .footer-content-right h2 {
+            font-size: 2.75em;
+            font-family: Turret Road;
+            padding: 25px;
+        }
+
+        .dev .city {
+            list-style-image: url(./imgs/location.png);
+            list-style-position: inside;
+        }
+
+        .dev .phone {
+            list-style-image: url(./imgs/whatsapp.png);
+            list-style-position: inside;
+        }
+    </style>
 </head>
 
 <body>
-    <img class="logo" src="./imgs/logo.png" alt="rick and morty">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./space-match.html">SpaceMatch</a></li>
-        <li><a href="./rules.html">Rules</a></li>
-        <li><a href="./episodes.html">Episodes</a></li>
-        <li><a href="./#">Caracters</a></li>
-        <li><a href="./ranking.html">Ranking</a></li>
-    </ul>
-    <header></header>
+    <header>
+        <nav class="menu">
+            <img class="logo" src="./imgs/logo.png" alt="rick and morty">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">SpaceMatch</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="./episodes.html">Episodes</a></li>
+                <li><a href="./caracters.html" class="link-caracters">Caracters</a></li>
+                <li><a href="./ranking.html">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
+        <div class="banner-main">
+            <img src="./imgs/banner-rick-and-morty-2.png" alt="Banner Principal da Páginas de Regra">
+        </div>
+        <div class="container">
 
+            <div class="container">
+                <h1>Caracters</h1>
+                <pre id="caracters" class="lista-personagens">
+                    <!-- Carrega Personagens -->
+                </pre>
+
+            </div>
+            <div class="paginacao">
+                <button id="prev"> PREV </button>
+                <div id="atualPage"> </div> <button id="next"> NEXT </button>
+            </div>
+
+        </div>
     </main>
+    <!-- Inclusão do Footer -->
     <footer>
-
+        <div class="container-footer">
+            <div class="footer-content-left">
+                <img src="./imgs/image.png" alt="I'm Pickle Rick">
+            </div>
+            <div class="footer-content-right">
+                <h2>WEBSITE DEVELOPERS</h2>
+                <div class="devs">
+                    <div class="dev">
+                        <h3>Lais Galetto</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Santos, SP</li>
+                            <li class="phone">+55 (13) 9 9643-3034</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Lucas Vida</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Belo Horizonte, MG</li>
+                            <li class="phone">+55 (31) 9 9290-8100</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Tiago Agnelo</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Salbador, BA</li>
+                            <li class="phone">+55 (71) 9 8849-8952</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Ramon Miranda</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Rio de Janeiro, RJ</li>
+                            <li class="phone">+55 (21) 9 8283-8989</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <script>
+
+        /* Verifica se houve scroll na página e coloca fundo menu preto */
+        let menu = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 550) {
+                menu.style.cssText = "background-color: rgba(0, 0, 0, 1); transition: 0.5s;"
+            } else {
+                menu.style.cssText = "background-color: rgba(0, 0, 0, 0.5); transition:0.5s;"
+            }
+        })
+
+
+        let page = 1;
+        let prev = document.querySelector('#prev');
+        let next = document.querySelector('#next');
+        let atual = document.querySelector('#atualPage');
+        let resultsContainer = document.querySelector('#caracters');
+
+        prev.addEventListener('click', () => {
+            if (page > 1) {
+                page--;
+                localStorage.setItem("pagina", page);
+                getData();
+            }
+        });
+
+        next.addEventListener('click', () => {
+            page++;
+            localStorage.setItem("pagina", page);
+            console.log(localStorage.getItem("pagina"));
+            getData();
+        });
+
+        async function getData() {
+            let pageAtual = localStorage.getItem("pagina");
+            let info = await fetch('https://rickandmortyapi.com/api/character/?page=' + pageAtual);
+            let dados = await info.json();
+
+            // Limpa apenas o conteúdo dentro do elemento de resultados
+            resultsContainer.innerHTML = '';
+
+            for (let i of dados.results) {
+                let newDiv = document.createElement('div');
+                newDiv.innerHTML =
+                    `
+                    <img src="${i.image}" alt="${i.name}"<br> 
+                    <h3>${i.name}</h3>
+                    <h4 class="status">${i.status}</h4>
+                    <p> 👽 ${i.species}  ⚧️${i.gender} </p> 
+                        <p> 🌎 ${i.location.name}  </p>
+                    `
+                newDiv.classList.add('card-caracters');
+                resultsContainer.appendChild(newDiv);
+            }
+
+            prev.innerHTML = `← Página Anterior ${pageAtual - 1}`;
+            next.innerHTML = `Próxima Página  ${Number(pageAtual) + 1} →`;
+            atual.innerHTML = `<div class="pagina-atual"> ${pageAtual}`;
+
+            if (pageAtual == 1) {
+                prev.style.display = 'none';
+            } else {
+                prev.style.display = 'block';
+            }
+
+            if (pageAtual == 42) {
+                next.style.display = 'none';
+            } else {
+                next.style.display = 'block';
+            }
+        }
+
+        getData();
+
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
