@@ -1,0 +1,222 @@
+/*Reset Basic*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html {
+    list-style: none;
+    outline: none;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black #08C952;;
+  }
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #08C952;
+    border-radius: 20px;
+    border: solid black 5px;
+    height: 25px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+.menu{
+    background-color: #314f3150;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.menu img{
+    height: 85px;
+    margin: 5px 15px 5px 15px;
+}
+
+.menu ul li {
+    float: left;
+    margin-left: 10px;
+    padding: 25px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: #08C952;
+}
+
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+}
+
+.banner{
+    width: 100%;
+    background-image: url('../assets/imgs/banner.jpeg');
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner button{
+    margin-top: 70px !important;
+    margin: 0 auto;
+    padding: 15px 30px 15px 30px ;
+    width: 20%;
+    background-color: #314f31a0;
+    border: #ffff 2px solid;
+    border-radius: 30px;
+}
+
+.banner button a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Turret Road', cursive;
+}
+
+.banner button:hover{
+    color: #ffffff;
+    background-color: #42b2c9b8;
+    border: #ffffffcb solid;
+}
+
+.logo-banner{ 
+    margin-top: 220px !important;
+    margin: 0 auto;
+    height: 180px;
+}
+
+.space-match{
+    background-image: linear-gradient( #000000 50%, #EDCF6B 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.space-match h1{
+    font-size: 28px;
+    color: #ffffff;
+    font-family: 'Turret Road', cursive;
+    padding: 40px;
+}
+
+.banner-img{
+    background-color: #08c952;
+}
+
+.game-space-match{
+    display: flex;
+    height: 450px;
+    width: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../assets/imgs/jonny.jpeg);
+    border-radius: 30px;
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+
+.game-space-match p {
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Turret Road', cursive;
+}
+
+.icon-mao{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.title-game{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.subtitle-game{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.game-space-match button{
+    background-image: linear-gradient(to right, #A1140A 70%, #EDCF6B   );
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 60px !important;
+    width: 60%;
+}
+
+.game-space-match button:hover{
+    background-image: linear-gradient(to right, #A1140A , #EDCF6B  70% );
+}
+
+.game-space-match button a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 24px;
+    font-family: 'Turret Road', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.connect-us{
+    background-color: #160440;
+    height: 230px;
+}
+
+
+
+
+.banner-characters img{
+    height: 100px;
+}
+
+.logo2{
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; }
+    .menu {
+        order: 1; 
+    }
+}
