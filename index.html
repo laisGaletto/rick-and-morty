@@ -11,16 +11,41 @@
     <title>Space Match | Home</title>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <a class="logo" href="./index.html"><img src="./assets/imgs/logo.png" alt="rick and morty"></a>
+    <header style="    width: 100%; position: fixed;">
+        <nav class="menu" style=" background-color: #314f3150;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        margin: 0 auto;
+        padding: 15px;
+    ">
+            <a class="logo" style="text-decoration: none;" href="./index.html"><img style="  height: 55px; margin-top: 10px; margin-bottom: 10px; margin-left: 65px;" src="./assets/imgs/logo.png" alt="rick and morty"></a>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/characters.html">Characters</a></li>
-                <li><a href="./pages/episodes.html">Episodes</a></li>
-                <li><a href="./pages/space-match.html">Game</a></li>
-                <li><a href="./pages/rules.html">Rules</a></li>
-                <li><a href="./pages/ranking.html">Ranking</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./index.html">Home</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./pages/characters.html">Characters</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./pages/episodes.html">Episodes</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./pages/space-match.html">Game</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./pages/rules.html">Rules</a></li>
+                <li style=" float: left;
+                margin-left: 10px;
+                padding: 25px;
+                list-style: none;"><a style=" text-decoration: none; color: #ffff; font-family: 'Turret Road', cursive; font-size: 18px;" href="./pages/ranking.html">Ranking</a></li>
             </ul>
         </nav>
     </header>
@@ -41,213 +66,58 @@
             </div>
         </section>
 
-        <section class="connect-us">
-            <h2>Connect with us</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/laisGaletto/rick-and-morty" class="imagens">
-                        <img src="./assets/imgs/github.png" alt="github"/>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://twitter.com/htmlLalis"class="imagens">
-                        <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                        <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                        <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                    </a>
-                </li>
-            </ul>
-           
-           
-            
-            
-        </section>
-
         <div class="banner-characters">
-            <img class="banner-characters" src="./assets/imgs/banner-1.webp" alt="">
-            <h3>Favorite Characters</h3>
-            <p>Have you ever tried to find your favorite character and it seems like an impossible mission to accomplish? Maybe it's in our Space Match!</p>
-            <a href="./pages/characters.html">Check characters!</a>
+            <img class="banner-characters-image" src="./assets/imgs/banner-1.webp" alt="">
+            <div class="banner-characters-content">
+                <h3>Favorite Characters</h3>
+                <p>Have you ever tried to find your favorite character and it seems like an impossible mission to accomplish? Maybe it's in our Space Match!</p>
+                <a href="./pages/characters.html">Check characters!</a>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="logo-infos">
-            <img class="logo2" src="../assets/imgs/logo2.png" alt="Pickle Rick">
-            <ul class="infos-footer">
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Code of Conduct</a></li>
-            </ul>
-            <ul class="redes-footer">
-                <li>
-                    <a href="https://github.com/laisGaletto" class="imagens">
-                        <img src="./assets/imgs/github.png" alt="github"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/htmlLalis"class="imagens">
-                        <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                        <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                        <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
-        <div id="contact">
-            <div class="dados-dev">
-                <h5>LAIS GALETTO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Santos, SP</p></li>
-                    <li><p>+55 (13) 9 9643-3034</p></li>
-                </ul>
-                
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/laisGaletto" class="imagens">
-                            <img src="./assets/imgs/github.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/htmlLalis"class="imagens">
-                            <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                            <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                            <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container-footer">
+            <div class="footer-content-left">
+                <img src="./assets/imgs/logo2.png" alt="I'm Pickle Rick">
             </div>
+            <div class="footer-content-right">
+                <h2>WEBSITE DEVELOPERS</h2>
+                <div class="devs">
+                    <div class="dev">
+                        <h3>Lais Galetto</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Santos, SP</li>
+                            <li class="phone">+55 (13) 9 9643-3034</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Lucas Vida</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Belo Horizonte, MG</li>
+                            <li class="phone">+55 (31) 9 9290-8100</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Tiago Agnelo</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Salbador, BA</li>
+                            <li class="phone">+55 (71) 9 8849-8952</li>
+                        </ul>
+                    </div>
+                    <div class="dev">
+                        <h3>Ramon Miranda</h3>
+                        Front-End Developer
+                        <ul>
+                            <li class="city">Rio de Janeiro, RJ</li>
+                            <li class="phone">+55 (21) 9 8283-8989</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="dados-dev">
-                <h5>LUCAS VIDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Belo horizonte, MG</p></li>
-                    <li><p>+55 (31) 9 9290-8100</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="./assets/imgs/github.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="dados-dev">
-                <h5>TIAGO AGNELO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Salvador, BA</p></li>
-                    <li><p>+55 (71) 9 8849-8952</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="./assets/imgs/github.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="dados-dev">
-                <h5>RAMON MIRANDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Rio De Janeiro, RJ</p></li>
-                    <li><p>+55 (21) 9 8283-8989</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/ramon-miranda" class="imagens">
-                            <img src="./assets/imgs/github.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Ramon_mirandas"class="imagens">
-                            <img src="./assets/imgs/twitter.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ramon_miranda/"class="imagens">
-                            <img src="./assets/imgs/instagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ramonmiranda98/"class="imagens">
-                            <img src="./assets/imgs/logotipo-do-linkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>Rick and Morty @ 2023</p>
-            <p>Website created by Lais Galetto, Lucas Vida, Tiago Agnelo e Ramon Mirando</p>
-        </div>
     </footer>
 </body>
 </html>
