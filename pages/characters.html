@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+    <link rel="stylesheet" href="../styles/characters.css">
+    <link rel="icon" href="../assets/imgs/favicon.ico">
+    <meta name="description" content="Conheça os persoagens do jogo e seu status atual">
+    <title>Space Match | Characters</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <nav class="menu">
+                <img class="logo" src="/assets/imgs/logo.png" alt="rick and morty">
+                <ul>
+                    <li><a href="/pages/space-match.html">Home</a></li>
+                    <li><a href="/pages/space-match.html">SpaceMatch</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="/pages/episodes.html">Episodes</a></li>
+                    <li><a href="/pages/characters.html" class="link-caracters">Caracters</a></li>
+                    <li><a href="/pages/ranking.html">Ranking</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="banner-main">
+                <img src="../assets/imgs/banner-rick-and-morty-2.png" alt="Banner Principal da Páginas de Regra">
+            </div>
+            <div class="container">
+
+                <div class="container">
+                    <h1>Caracters</h1>
+                    <div class="ordenacao">
+                        <select id="select">
+                            <option value="default"> Default </option>
+                            <option value="AZ">Ordernar A - Z</option>
+                            <option value="ZA">Ordernar Z - A</option>
+                        </select>
+                        <button id="button">Ordenar</button>
+                    </div>
+                    <pre id="caracters" class="lista-personagens">
+                        <!-- Carrega Personagens -->
+                    </pre>
+
+                </div>
+                <div class="paginacao">
+                    <button id="prev"> PREV </button>
+                    <div id="atualPage"> </div> <button id="next"> NEXT </button>
+                </div>
+
+            </div>
+        </main>
+        <!-- Inclusão do Footer -->
+        <footer>
+            <div class="container-footer">
+                <div class="footer-content-left">
+                    <img src="../assets/imgs/image.png" alt="I'm Pickle Rick">
+                </div>
+                <div class="footer-content-right">
+                    <h2>WEBSITE DEVELOPERS</h2>
+                    <div class="devs">
+                        <div class="dev">
+                            <h3>Lais Galetto</h3>
+                            Front-End Developer
+                            <ul>
+                                <li class="city">Santos, SP</li>
+                                <li class="phone">+55 (13) 9 9643-3034</li>
+                            </ul>
+                        </div>
+                        <div class="dev">
+                            <h3>Lucas Vida</h3>
+                            Front-End Developer
+                            <ul>
+                                <li class="city">Belo Horizonte, MG</li>
+                                <li class="phone">+55 (31) 9 9290-8100</li>
+                            </ul>
+                        </div>
+                        <div class="dev">
+                            <h3>Tiago Agnelo</h3>
+                            Front-End Developer
+                            <ul>
+                                <li class="city">Salbador, BA</li>
+                                <li class="phone">+55 (71) 9 8849-8952</li>
+                            </ul>
+                        </div>
+                        <div class="dev">
+                            <h3>Ramon Miranda</h3>
+                            Front-End Developer
+                            <ul>
+                                <li class="city">Rio de Janeiro, RJ</li>
+                                <li class="phone">+55 (21) 9 8283-8989</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <script src="../js/characters.js"></script>
+    </body>
+</body>
+
+
     <link rel="icon" href="../assets/imgs/favicon.ico">
     <title>Space Match | Characters</title>
 </head>
@@ -230,4 +332,5 @@
         </div>
     </footer>
 </body>
+
 </html>
