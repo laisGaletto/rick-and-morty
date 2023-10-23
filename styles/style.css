@@ -275,8 +275,16 @@ footer ul li {
     font-size: 2.75em;
     font-family: Turret Road;
     padding: 25px;
-    
+
 }
+
+.footer-content-right p {
+    font-size: 1em;
+    font-family: Turret Road;
+    padding: 25px;
+
+}
+
 
 .dev .city {
     list-style-image: url(../assets/imgs/location.png);
