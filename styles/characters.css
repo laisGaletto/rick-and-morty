@@ -77,6 +77,15 @@ h1 {
 }
 
 
+.menu-lateral ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+}
+
 /*Banner Main*/
 
 .banner-main img {

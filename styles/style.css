@@ -32,6 +32,67 @@ html {
     height: 25px;
 }
 
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+.menu ul li {
+    float: left;
+    margin-left: 10px;
+    padding: 25px;
+    list-style: none;
+
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #08C952;
+}
+
+.menu .link-caracters {
+    color: #08C952;
+}
+
+
+.menu-lateral ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+}
+
+.logo img{
+    width: 100%;
+    height: 70px;
+}
+
 .banner{
     width: 100%;
     background-image: url('../assets/imgs/banner.jpeg');
