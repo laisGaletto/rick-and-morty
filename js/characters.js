@@ -60,7 +60,7 @@ async function getData() {
   // Limpa apenas o conteúdo dentro do elemento de resultados
   resultsContainer.innerHTML = "";
 
-  if (ordernacao == "AZ") {
+  if (ordernacao === "AZ") {
     dados.results.sort(function (a, b) {
       if (a.name < b.name) {
         return -1;
@@ -69,7 +69,7 @@ async function getData() {
         return true;
       }
     });
-  } else if (ordernacao == "ZA") {
+  } else if (ordernacao === "ZA") {
     dados.results.sort(function (a, b) {
       if (a.name > b.name) {
         return -1;
@@ -97,13 +97,13 @@ async function getData() {
   next.innerHTML = `Próxima Página  ${Number(pageAtual) + 1} →`;
   atual.innerHTML = `<div class="pagina-atual"> ${pageAtual}`;
 
-  if (pageAtual == 1) {
+  if (pageAtual === 1) {
     prev.style.display = "none";
   } else {
     prev.style.display = "block";
   }
 
-  if (pageAtual == 42) {
+  if (pageAtual === 42) {
     next.style.display = "none";
   } else {
     next.style.display = "block";
@@ -111,3 +111,35 @@ async function getData() {
 }
 
 getData();
+
+let btnSearch = document.querySelector("#search-btn");
+let inpSearch = document.querySelector("#search");
+
+btnSearch.addEventListener("click", (e) => {
+  e.preventDefault();
+  //Limpa previamente os personagens já carregados.
+  resultsContainer.innerHTML = "";
+  //Consome a API novamente passando o nome do personagem
+  async function search() {
+    let url = await fetch(
+      "https://rickandmortyapi.com/api/character/?name=" + inpSearch.value
+    );
+
+    let dadosSearch = await url.json();
+
+    for (let i of dadosSearch.results) {
+      let newDiv = document.createElement("div");
+      newDiv.innerHTML = `
+            <img src="${i.image}" alt="${i.name}"<br> 
+            <h3>${i.name}</h3>
+            <h4 class="status">${i.status}</h4>
+            <p> 👽 ${i.species}  ⚧️${i.gender} </p> 
+                <p> 🌎 ${i.location.name}  </p>
+            `;
+      newDiv.classList.add("card-caracters");
+      resultsContainer.appendChild(newDiv);
+    }
+  }
+  //Chama a função Search
+  search();
+});

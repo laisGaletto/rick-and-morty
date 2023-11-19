@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                      <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="../assets/imgs/favicon.ico">
+    <link rel="stylesheet" href="../styles/characters.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Space Match | Game</title>
 </head>
 <body>
     <header>
-            <nav class="menu">
-                <a class="logo" href="../index.html"><img src="../assets/imgs/logo.png" alt="rick and morty"></a>
-                <ul>
-                    <li><a href=".././index.html">Home</a></li>
-                    <li><a href="../pages/characters.html">Characters</a></li>
-                    <li><a href="../pages/episodes.html">Episodes</a></li>
-                    <li><a href="../pages/space-match.html">Game</a></li>
-                    <li><a href="../pages/rules.html">Rules</a></li>
-                    <li><a href="../pages/ranking.html">Ranking</a></li>
-                </ul>
-            </nav>
+        <nav class="menu">
+            <a href="../index.html"><img class="logo" style="width: 215px; height: 70px;" src="../assets/imgs/logo.png" alt="rick and morty"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/space-match.html">SpaceMatch</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="../pages/episodes.html">Episodes</a></li>
+                <li><a href="../pages/characters.html" class="link-caracters">Caracters</a></li>
+                <li><a href="../pages/ranking.html">Ranking</a></li>
+            </ul>
+        </nav>
     </header>
         
     <main>
@@ -36,7 +40,7 @@
                 <p class="icon-mao">👋</p>
                 <p class="title-game"> Let's get you ready! </p>
                 <p class="subtitle-game">Here's everything you need to know</p>
-                <button><a href="./pages/space-match.html">Start</a></button>
+                <button id="btn-start">Start</button>
             </div>
         </section>
 
@@ -45,173 +49,51 @@
         </section>
         
     </main>
-    
+
     <footer>
-        <div class="logo-infos">
-            <img class="logo2" src="../assets/imgs/logo2.png" alt="Pickle Rick">
-            <ul class="infos-footer">
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Code of Conduct</a></li>
-            </ul>
-            <ul class="redes-footer">
-                <li>
-                    <a href="https://github.com/laisGaletto" class="imagens">
-                        <img src="icone/iconegithub.png" alt="github"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/htmlLalis"class="imagens">
-                        <img src="icone/iconex.png" alt="twitter"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                        <img src="icone/iconeinstagram.png" alt="instagram"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                        <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                    </a>
-                </li>
-            </ul>
-            
+    <div class="container-footer">
+        <div class="footer-content-left">
+            <img src="../assets/imgs/logo2.png" alt="I'm Pickle Rick">
         </div>
-        <div id="contact">
-            <div class="dados-dev">
-                <h5>LAIS GALETTO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Santos, SP</p></li>
-                    <li><p>+55 (13) 9 9643-3034</p></li>
-                </ul>
-                
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/laisGaletto" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/htmlLalis"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/html.lalis/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/laisgaletto/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <div class="dados-dev">
-                <h5>LUCAS VIDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Belo horizonte, MG</p></li>
-                    <li><p>+55 (31) 9 9290-8100</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="dados-dev">
-                <h5>TIAGO AGNELO</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Salvador, BA</p></li>
-                    <li><p>+55 (71) 9 8849-8952</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="dados-dev">
-                <h5>RAMON MIRANDA</h5>
-                <ul class="infos-dev">
-                    <li><p>Front-end Developer</p></li>
-                    <li><p>Rio De Janeiro, RJ</p></li>
-                    <li><p>+55 (21) 9 8283-8989</p></li>
-                </ul>
-
-                <ul class="redes-dev">
-                    <li>
-                        <a href="https://github.com/ramon-miranda" class="imagens">
-                            <img src="icone/iconegithub.png" alt="github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Ramon_mirandas"class="imagens">
-                            <img src="icone/iconex.png" alt="twitter"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ramon_miranda/"class="imagens">
-                            <img src="icone/iconeinstagram.png" alt="instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ramonmiranda98/"class="imagens">
-                            <img src="icone/iconelinkedin.png" alt="linkedin"/>
-                        </a>
-                    </li>
-                </ul>
+        <div class="footer-content-right">
+            <h2>WEBSITE DEVELOPERS</h2>
+            <div class="devs">
+                <div class="dev">
+                    <h3>Lais Galetto</h3>
+                    Front-End Developer
+                    <ul>
+                        <li class="city">Santos, SP</li>
+                        <li class="phone">+55 (13) 9 9643-3034</li>
+                    </ul>
+                </div>
+                <div class="dev">
+                    <h3>Lucas Vida</h3>
+                    Front-End Developer
+                    <ul>
+                        <li class="city">Belo Horizonte, MG</li>
+                        <li class="phone">+55 (31) 9 9290-8100</li>
+                    </ul>
+                </div>
+                <div class="dev">
+                    <h3>Tiago Agnelo</h3>
+                    Front-End Developer
+                    <ul>
+                        <li class="city">Salbador, BA</li>
+                        <li class="phone">+55 (71) 9 8849-8952</li>
+                    </ul>
+                </div>
+                <div class="dev">
+                    <h3>Ramon Miranda</h3>
+                    Front-End Developer
+                    <ul>
+                        <li class="city">Rio de Janeiro, RJ</li>
+                        <li class="phone">+55 (21) 9 8283-8989</li>
+                    </ul>
+                </div>
             </div>
         </div>
+</footer>
 
-        <div class="footer-bottom">
-            <p>Rick and Morty @ 2023</p>
-            <p>Website created by Lais Galetto, Lucas Vida, Tiago Agnelo e Ramon Mirando</p>
-        </div>
-    </footer>
+<script src="../js/game.js"></script>
 </body>
 </html>
