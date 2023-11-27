@@ -14,67 +14,44 @@ header {
     box-shadow: inset 0 0 50px black
 }
 
-.header_menu {
-
-    background-color: #314f3150;
+.menu {
     display: flex;
-    height: 55px;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    height: 100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+
 }
 
-ul li {
+.menu ul li {
     float: left;
-    color: white;
     margin-left: 10px;
     padding: 25px;
-    padding-top: 45px;
     list-style: none;
-    font-family: 'Turret Road', cursive;
+
 }
 
-.header_logo_1 img{
-    height: 45px;
-    margin-left: 10px;
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: var(--font-title);
 }
 
-.header_logo_2 img{
-    align-items: center;
-    height:150px;
+.menu a:hover {
+    text-decoration: none;
+    color: #08C952;
 }
 
-#divBusca{
-    margin: 10px;
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:280px;
-    height:35px;
+.menu .link-caracters {
+    color: #08C952;
 }
-  
-#txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width: 180px;
-    font-family: 'Turret Road', cursive;
-}
-  
-#btnBusca{
-    border:none;
-    float:right;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-family: 'Turret Road', cursive;
-    font-weight:bold;
-    background:#5F9EA0;
-    margin: 0;
-    padding: 0;
+
+.menu img{
+    width: 220px;
+    height: 80px;
 }
 
 main{
@@ -159,17 +136,63 @@ main{
 
 }
 
-footer{
-   background-color: #EDCF6B;
-   margin: 0;
-   display: flex;
-   flex-direction: row;
+/*Footer*/
+
+footer {
+    background: linear-gradient(180deg, #FCE46D 0%, #EDCF6B 100%);
+    min-height: 350px;
 }
 
-a {
-    color: inherit; 
-} 
+footer ul li {
+    list-style: none;
+}
 
-.footer_devs {    
-    display: inline-block;
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px;
+}
+
+.footer-content-right {
+    width: 85%;
+    padding: 20px;
+    text-align: right;
+}
+
+.footer-content-left {
+    width: 10%;
+    padding: 20px;
+}
+
+.devs {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.dev {
+
+    min-height: 150px;
+    padding: 15px;
+    margin-left: 10px;
+    text-align: left;
+
+
+}
+
+.footer-content-right h2 {
+    font-size: 2.75em;
+    font-family: "Turret Road";
+    padding: 25px;
+}
+
+.dev .city {
+    list-style-image: url(../assets/imgs/location.png);
+    list-style-position: inside;
+}
+
+.dev .phone {
+    list-style-image: url(../assets/imgs/whatsapp.png);
+    list-style-position: inside;
 }
