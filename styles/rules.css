@@ -170,24 +170,28 @@ footer ul li {
 }
 
 .dev {
+
     min-height: 150px;
     padding: 15px;
     margin-left: 10px;
     text-align: left;
+
+
 }
 
 .footer-content-right h2 {
     font-size: 2.75em;
-    font-family: Turret Road;
+    font-family: "Turret Road";
     padding: 25px;
 }
 
 .dev .city {
-    list-style-image: url(/imgs/location.png);
+    list-style-image: url(../assets/imgs/location.png);
     list-style-position: inside;
 }
 
 .dev .phone {
-    list-style-image: url(/imgs/whatsapp.png);
+    list-style-image: url(../assets/imgs/whatsapp.png);
     list-style-position: inside;
 }
+
