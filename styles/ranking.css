@@ -10,6 +10,15 @@ header {
     position: fixed;
 }
 
+h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+/* Menu */
+
+
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -49,6 +58,7 @@ header {
     width: 220px;
     height: 80px;
 }
+
 
 main{
    margin: 0;
