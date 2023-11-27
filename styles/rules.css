@@ -1,0 +1,193 @@
+/*Import Fontes*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+
+
+/*Root*/
+
+*{
+    margin: 0;
+}
+
+:root {
+    --font-title: 'Turret Road', cursive;
+    --font-principal: 'Montserrat', sans-serif;
+    --color-base-title: #FCE46D;
+    --color-base-text: #FFFFFF;
+}
+
+/*Estilos Gerais da Página */
+
+main {
+background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(191, 22, 22, 0.872) 100%), url(/imgs/background-space-ia.jpg), lightgray 50% / cover repeat;
+background-size: cover;
+}
+
+header {
+background-color: rgba(0, 0, 0, 0.142);
+width: 100%;
+position: fixed;
+}
+
+
+/* Menu */
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.menu ul li {
+    float: left;
+    margin-left: 10px;
+    padding: 25px;
+    list-style: none;
+
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #08C952;
+}
+
+.menu .link-rules {
+    color: #08C952;
+}
+
+/*Rules CSS*/
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container h1 {
+
+    text-align: center;
+    font-family: var(--font-title);
+    color: var(--color-base-title);
+    font-size: 3em;
+    padding: 200px  0 0 0;
+}
+
+.rules,
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.rules-intro {
+    padding: 25px;
+    font-size: 1.5em;
+    color: var(--color-base-text);
+}
+
+.rules-intro p {
+    margin-top: 20px;
+    font-family: var(--font-principal);
+}
+
+.rules-img img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    padding: 25px;
+}
+
+/*Steps CSS*/
+
+.container h1:nth-child(3) {
+    text-align: left;
+}
+
+.steps-number {
+    width: 20%
+}
+
+.steps-content {
+    width: 80;
+}
+
+.steps-content p {
+    font-size: 1.75em;
+    padding: 25px;
+    margin-left: 25px;
+    color: var(--color-base-text);
+    font-family: var(--font-principal);
+}
+
+/*Footer*/
+
+footer {
+    background: linear-gradient(180deg, #FCE46D 0%, #EDCF6B 100%);
+    min-height: 350px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px;
+}
+
+.footer-content-right {
+    width: 85%;
+    padding: 20px;
+    text-align: right;
+}
+
+.footer-content-left {
+    width: 10%;
+    padding: 20px;
+}
+
+.devs {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.dev {
+    min-height: 150px;
+    padding: 15px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.footer-content-right h2 {
+    font-size: 2.75em;
+    font-family: Turret Road;
+    padding: 25px;
+}
+
+.dev .city {
+    list-style-image: url(/imgs/location.png);
+    list-style-position: inside;
+}
+
+.dev .phone {
+    list-style-image: url(/imgs/whatsapp.png);
+    list-style-position: inside;
+}
