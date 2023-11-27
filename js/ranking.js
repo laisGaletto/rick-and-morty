@@ -1,3 +1,4 @@
 function buscar() {
-    alert("Busca realizada com sucesso");
+    alert("Busca Realizada com sucesso");
 }
+
