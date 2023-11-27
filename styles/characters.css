@@ -129,7 +129,7 @@ h1 {
 
 .ordenacao{
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
 }
 
 .ordenacao select{
@@ -154,6 +154,42 @@ h1 {
     border-radius: 15px;
     border: none;
     cursor: pointer;
+}
+
+/*Search*/
+.top-search{
+    display:flex;
+    justify-content: space-between;
+}
+
+.top-search button{
+    background-color:#08C952;
+    color: #000000;
+    width: 75px;
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.top-search input{
+    background-color:#08c9521c;
+    color:#08C952 ;
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+.search{
+    width: 350px;
+}
+
+.not-found{
+    color:#08C952;
 }
 /*Paginação*/
 
