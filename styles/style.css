@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
 
-
 /*Reset Basic*/
 
 * {
@@ -39,16 +38,37 @@ html {
     height: 25px;
 }
 
+/*Root*/
+
+:root {
+    --font-title: 'Turret Road', cursive;
+    --font-principal: 'Montserrat', sans-serif;
+    --color-base-title: #FCE46D;
+    --color-base-text: #FFFFFF;
+}
+
+/*Estilos Gerais da Página */
+
+main {
+    background: #000;
+}
+
 header {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     position: fixed;
 }
 
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
 h1 {
     color: #FFF;
     text-align: center;
 }
+
 
 /* Menu */
 
