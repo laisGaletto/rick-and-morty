@@ -179,6 +179,11 @@ footer ul li {
 
 }
 
+.dev ul{
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
 .footer-content-right h2 {
     font-size: 2.75em;
     font-family: "Turret Road";
