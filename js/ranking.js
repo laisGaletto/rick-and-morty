@@ -1,28 +1,47 @@
- async function search() {
-    try {
-      let url = await fetch(
-        "https://rickandmortyapi.com/api/character/?name=" + inpSearch.value
-      );
+async function fetchData() {
+  try {
+    const response = await fetch('https://rickandmortyapi.com/api/character');
+    const data = await response.json();
 
-      let dadosSearch = await url.json();
+    const characterContainer = document.getElementById('character-container');
 
-      for (let i of dadosSearch.results) {
-        let newDiv = document.createElement("div");
-        newDiv.innerHTML = `
-            <img src="${i.image}" alt="${i.name}"<br> 
-            <h3>${i.name}</h3>
-            <h4 class="status">${i.status}</h4>
-            <p> 👽 ${i.species}  ⚧️${i.gender} </p> 
-                <p> 🌎 ${i.location.name}  </p>
-            `;
-        newDiv.classList.add("card-caracters");
-        resultsContainer.appendChild(newDiv);
-      }
-    } catch (err) {
-      resultsContainer.innerHTML =
-        "<div class='not-found'>Personagem não encontrado</div>";
+    for (let i = 0; i < 3; i++) {
+      const randomCharacter = data.results[Math.floor(Math.random() * data.results.length)];
+
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      const bg = document.createElement('div');
+      bg.classList.add('bg');
+
+      const imageContainer = document.createElement('div');
+      imageContainer.id = `image-container-${i}`;
+      const imageElement = document.createElement('img');
+      imageElement.src = randomCharacter.image;
+      imageElement.alt = randomCharacter.name;
+      imageContainer.appendChild(imageElement);
+
+      const characterInfo = document.createElement('p');
+      characterInfo.id = `character-info-${i}`;
+      characterInfo.innerHTML = `Name: ${randomCharacter.name} <br> 
+        Status: ${randomCharacter.status} <br> 
+        Species: 👽 ${randomCharacter.species}`;
+
+      bg.appendChild(imageContainer);
+      bg.appendChild(characterInfo);
+
+      const blob = document.createElement('div');
+      blob.classList.add('blob');
+
+      card.appendChild(bg);
+      card.appendChild(blob);
+
+      characterContainer.appendChild(card);
     }
+
+  } catch (error) {
+    console.error('Erro ao buscar dados da API:', error);
   }
-  //Chama a função Search
-  search();
-});
+}
+
+fetchData();
